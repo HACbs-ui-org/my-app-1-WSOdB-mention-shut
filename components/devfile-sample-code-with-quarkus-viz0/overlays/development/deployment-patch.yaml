@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-code-with-quarkus-viz0
+  namespace: burrzinga-hac-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoupuicluster/burrzinga-hac-tenant/my-app-1/devfile-sample-code-with-quarkus-viz0@sha256:6555069159b959a888fcbc9275f7bc4190484e2e491e12f4cd06f3be93edefd7
+        name: my-java-quarkus
+        resources: {}
+status: {}
